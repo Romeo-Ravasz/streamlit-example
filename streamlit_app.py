@@ -17,7 +17,7 @@ def kiszámolás():
         vegeredmeny == szam1 - szam2
     if muvelet == "szorzás":
         vegeredmeny == szam1 * szam2
-    if muvelet = "osztás":
+    if muvelet == "osztás":
         vegeredmény == szam1 / szam2
     else:
         st.error("Valami elromlott :/")
