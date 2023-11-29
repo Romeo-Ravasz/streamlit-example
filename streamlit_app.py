@@ -22,7 +22,7 @@ def kiszámolás():
     else:
         st.error("Valami elromlott :/")
 
-    st.success(f"A végeredmény: {vegeredmeny})
+    st.success(f"A végeredmény: {vegeredmeny}")
 
 if st.button("Kalkulálj!"):
     kiszámolás()
