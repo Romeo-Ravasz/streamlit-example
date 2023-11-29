@@ -10,14 +10,14 @@ vegeredmeny = 0
 def kiszámolás():
     if muvelet == "összeadás":
         vegeredmeny == num1 + num2
-    if muvelet == "kivonás":
+    elif muvelet == "kivonás":
         vegeredmeny == num1 - num2
-    if muvelet == "szorzás":
+    elif muvelet == "szorzás":
         vegeredmeny == num1 * num2
-    if muvelet == "osztás" and num2!=0:
+    elif muvelet == "osztás" and num2!=0:
         vegeredmény == num1 / num2
     else:
-        st.error("Valami elromlott :/")
+        st.warning("Valami elromlott :/")
 
     st.success(f"A végeredmény: {vegeredmeny}")
 fasz = st.button("Kalkulálj!")
