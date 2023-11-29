@@ -5,12 +5,8 @@ st.write("---")
 
 num1 = st.number_input(label = "Első szám:")
 num2 = st.number_input(label = "Második szám:")
-
-st.write("geci")
 muvelet = st.radio("Műveletek", ("összeadás", "kivonás", "szorzás", "osztás"))
-
 vegeredmeny = 0
-
 def kiszámolás():
     if muvelet == "összeadás":
         vegeredmeny == num1 + num2
