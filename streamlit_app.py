@@ -11,17 +11,16 @@ muvelet = st.radio("Műveletek", ("összeadás", "kivonás", "szorzás", "osztá
 vegeredmeny = 0
 
 def kiszámolás():
-    if muvelet = "összeadás":
-        vegeredmeny = szam1 + szam2
-    if muvelet = "kivonás":
-        vegeredmeny = szam1 - szam2
-    if muvelet = "szorzás":
-        vegeredmeny = szam1 * szam2
+    if muvelet == "összeadás":
+        vegeredmeny == szam1 + szam2
+    if muvelet == "kivonás":
+        vegeredmeny == szam1 - szam2
+    if muvelet == "szorzás":
+        vegeredmeny == szam1 * szam2
     if muvelet = "osztás":
-        vegeredmény = szam1 / szam2
+        vegeredmény == szam1 / szam2
     else:
-        st.warning("Valami elromlott :/")
-        vegeredmeny = "idk"
+        st.error("Valami elromlott :/")
 
     st.success(f"A végeredmény: {vegeredmeny})
 
