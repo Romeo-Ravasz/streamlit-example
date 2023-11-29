@@ -3,8 +3,8 @@ import streamlit as st
 st.title("Számológép")
 st.write("---")
 
-szam1 = st.number_input(label = "Első szám:")
-szam2 = st.number_input(label = "Második szám:")
+num1 = st.number_input(label = "Első szám:")
+num2 = st.number_input(label = "Második szám:")
 
 st.write("geci")
 muvelet = st.radio("Műveletek", ("összeadás", "kivonás", "szorzás", "osztás"))
@@ -13,13 +13,13 @@ vegeredmeny = 0
 
 def kiszámolás():
     if muvelet == "összeadás":
-        vegeredmeny == szam1 + szam2
+        vegeredmeny == num1 + num2
     if muvelet == "kivonás":
-        vegeredmeny == szam1 - szam2
+        vegeredmeny == num1 - num2
     if muvelet == "szorzás":
-        vegeredmeny == szam1 * szam2
+        vegeredmeny == num1 * num2
     if muvelet == "osztás":
-        vegeredmény == szam1 / szam2
+        vegeredmény == num1 / num2
     else:
         st.error("Valami elromlott :/")
 
