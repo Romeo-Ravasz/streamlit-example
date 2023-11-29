@@ -2,8 +2,8 @@ import streamlit as st
 
 st.title("Számológép")
 
-szam1 = st.number_input(label = szam1)
-szam2 = st.number_input(label = szam2)
+szam1 = st.number_input(label = "szam1")
+szam2 = st.number_input(label = "szam2")
 
 st.write("geci")
 muvelet = st.radio("Műveletek", ("összeadás", "kivonás", "szorzás", "osztás"))
