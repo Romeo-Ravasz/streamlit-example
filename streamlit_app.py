@@ -14,7 +14,7 @@ def kiszámolás():
         vegeredmeny == num1 - num2
     if muvelet == "szorzás":
         vegeredmeny == num1 * num2
-    if muvelet == "osztás":
+    if muvelet == "osztás" and num2 != 0:
         vegeredmény == num1 / num2
     else:
         st.error("Valami elromlott :/")
